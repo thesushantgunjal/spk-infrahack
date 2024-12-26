@@ -10,7 +10,7 @@
     .landing-page .home .home-content {
         width: 100% !important;
     }
-    .landing-page .custom-toggler {
+    .head .custom-toggler {
         color: white; 
         background-color: transparent; 
         border: none; 
@@ -40,7 +40,7 @@
     .landing-page .navbar-collapse.show {
         display: block !important; 
     }
-    .landing-page .sidebar .btn_hide {
+    .head .btn_hide {
         display: none !important;
     }
     
