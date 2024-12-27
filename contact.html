@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="assets/images/spk-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media-query.css">
+    <!-- Include intl-tel-input CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.min.css">
     <!-- AOS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Google Icons -->
@@ -144,25 +146,21 @@
                 </div>
             </div>
             <div class="col-md-5 text-center py-5">
-                <div class="enquiry_form p-4 mb-4">
+                <<div class="enquiry_form p-4 mb-4">
                     <img src="assets/images/spk-logo.png" alt="SPk Infrahack Logo" class="w-25 mb-3">
                     <h6 class="txt-white">We Would Be Happy To Assist You</h6>
-                    <form action="#">
-                        <input type="text" class="form-control bg-transparent my-4" placeholder="Enter Name" required
-                            autocomplete="off">
-                        <input type="email" class="form-control bg-transparent my-4" placeholder="Enter Email" required
-                            autocomplete="off">
-                        <input type="number" class="form-control bg-transparent my-4" placeholder="Enter Phone" required
-                            autocomplete="off">
-                        <input type="text" class="form-control bg-transparent my-4" placeholder="Enter Subject" required
-                            autocomplete="off">
-                        <textarea name="" id="" class="form-control bg-transparent" placeholder="Enter Your Messages.."
-                            required></textarea>
+                    <form id="enquiryForm">
+                        <input type="text" id="name" class="form-control bg-transparent my-4" placeholder="Enter Name" required autocomplete="off">
+                        <input type="email" id="email" class="form-control bg-transparent my-4" placeholder="Enter Email" required autocomplete="off">
+                        <input type="tel" id="phone" class="form-control bg-transparent my-4" placeholder="Enter Phone" required autocomplete="off">
+                        <input type="text" id="subject" class="form-control bg-transparent my-4" placeholder="Enter Subject" required autocomplete="off">
+                        <textarea id="message" class="form-control bg-transparent" placeholder="Enter Your Messages.." required></textarea>
                         <button type="submit" class="bttn px-3 py-2 mt-5">Send Message
                             <i class="fa fa-paper-plane ms-2"></i>
                         </button>
+                        <div id="errorMessage" class="text-danger mt-3" style="display: none;"></div>
                     </form>
-                </div>
+                </div>                
             </div>
         </div>
     </div>
@@ -284,6 +282,11 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
+    
 </body>
 
 </html>
