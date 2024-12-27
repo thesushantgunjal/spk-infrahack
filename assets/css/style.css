@@ -66,13 +66,14 @@ p {
 }
 
 .sub-head {
-  background: linear-gradient(45deg, var(--majorelle-blue), var(--aero));
-  /* background: var(--aero); */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(45deg, var(--majorelle-blue), var(--aero)); */
+  color: var(--aero);
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   /* display: inline-block; */
   /* color: var(--aero); */
 }
+
 
 .head {
   position: relative;
@@ -112,7 +113,7 @@ p {
 color: var(--text2);
 }
 .landing-page .navbar .sidebar .btn-close {
-  color: var(--text2) !important;
+  /* color: var(--aero) !important; */
 }
 .landing-page .navbar .sidebar .nav-item a {
   font-size: 24px;
