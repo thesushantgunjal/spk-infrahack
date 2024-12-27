@@ -311,26 +311,23 @@
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
     <script>
-        // Initialize intl-tel-input
         const phoneInputField = document.querySelector("#phone");
         const phoneInput = window.intlTelInput(phoneInputField, {
             initialCountry: "auto",
             geoIpLookup: function (callback) {
-                fetch('https://ipinfo.io/json?token=your_token') // Replace 'your_token' with a valid token for IP geolocation
+                fetch('https://ipinfo.io/103.38.69.122?token=6f83d84b1c3575') 
                     .then(response => response.json())
                     .then(data => callback(data.country))
-                    .catch(() => callback("US")); // Default to 'US' if lookup fails
+                    .catch(() => callback("US")); 
             },
             utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
         });
 
-        // Function to update the input value with the formatted number
         phoneInputField.addEventListener("blur", () => {
-            const phoneNumber = phoneInput.getNumber(); // Get the complete number
-            phoneInputField.value = phoneNumber; // Set it to the input
+            const phoneNumber = phoneInput.getNumber(); 
+            phoneInputField.value = phoneNumber; 
         });
 
-        // Validate form before submission
         document.getElementById("enquiryForm").addEventListener("submit", (e) => {
             if (!phoneInput.isValidNumber()) {
                 e.preventDefault();
