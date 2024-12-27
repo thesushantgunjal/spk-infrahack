@@ -323,13 +323,13 @@
             },
             utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
         });
-    
+
         // Function to update the input value with the formatted number
         phoneInputField.addEventListener("blur", () => {
             const phoneNumber = phoneInput.getNumber(); // Get the complete number
             phoneInputField.value = phoneNumber; // Set it to the input
         });
-    
+
         // Validate form before submission
         document.getElementById("enquiryForm").addEventListener("submit", (e) => {
             if (!phoneInput.isValidNumber()) {
@@ -341,7 +341,7 @@
             }
         });
     </script>
-    
+
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyBnJNz7PGol3xqEzPDoJMKS9Y3nnjwmmhbpgDZg8AU34XKh8PRG1KiX8KPc3fmDUoI/exec'
@@ -367,7 +367,12 @@
     </script>
 
     <script>
-        document.getElementById('c_date').value = new Date().toISOString().split('T')[0]
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentDate = new Date();
+            const formattedDateTime = currentDate.toISOString().slice(0, 16); 
+            document.getElementById("c_date").value = formattedDateTime;
+        });
+
     </script>
 
 </body>
