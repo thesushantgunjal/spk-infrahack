@@ -43,7 +43,10 @@
     #btn_hide {
         display: none !important;
     }
-    
+    .approach-icons {
+        height: auto !important;
+        width: 100px;
+    }
  }
 
 /* Small devices (tablets, 576px and up) */
