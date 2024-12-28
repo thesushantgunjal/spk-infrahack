@@ -47,6 +47,9 @@
         height: auto !important;
         width: 100px;
     }
+    #preloader {
+        background-size: 22%;
+    }
  }
 
 /* Small devices (tablets, 576px and up) */
