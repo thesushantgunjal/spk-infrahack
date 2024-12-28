@@ -64,6 +64,8 @@
 </head>
 
 <body>
+    <!-- preloader -->
+    <div id="preloader"></div>
 
     <!-- head -->
     <div class="head">
@@ -281,6 +283,11 @@
     </script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+        // preloader
+        var loader = document.getElementById('preloader');
+        window.addEventListener('load', function() {
+            loader.style.display = 'none';
+        });
     </script>
 </body>
 

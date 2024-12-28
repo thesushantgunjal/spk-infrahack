@@ -64,6 +64,8 @@
 </head>
 
 <body>
+    <!-- preloader -->
+    <div id="preloader"></div>
 
     <!-- head -->
     <div class="head">
@@ -350,24 +352,35 @@
             <div class="row">
                 <div class="swiper-container brand-slider py-5 overflow-hidden">
                     <div class="swiper-wrapper text-center">
-                        <div class="swiper-slide">
-                            <img src="assets/images/clients/ECS-website-logo.png" alt="">
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <img class="img-fluid" src="assets/images/clients/client-logo (2).png" width="250"
+                                height="auto" alt="">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/clients/ECS-website-logo.png" alt="">
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <img class="img-fluid" src="assets/images/clients/client-logo (1).jpg" width="120"
+                                height="auto" alt="">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/clients/ECS-website-logo.png" alt="">
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <img class="img-fluid" src="assets/images/clients/client-logo (1).png" width="110"
+                                height="auto" alt="">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/clients/ECS-website-logo.png" alt="">
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <img class="img-fluid" src="assets/images/clients/client-logo (3).png" width="200"
+                                height="auto" alt="">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/clients/ECS-website-logo.png" alt="">
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <img class="img-fluid" src="assets/images/clients/client-logo (4).png" width="80"
+                                height="auto" alt="">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/clients/ECS-website-logo.png" alt="">
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <img class="img-fluid" src="assets/images/clients/client-logo (2).jpg" width="130"
+                                height="auto" alt="">
                         </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <img class="img-fluid" src="assets/images/clients/client-logo (5).png" width="120"
+                                height="auto" alt="">
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -460,6 +473,11 @@
     </script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+        // preloader
+        var loader = document.getElementById('preloader');
+        window.addEventListener('load', function() {
+            loader.style.display = 'none';
+        });
     </script>
 </body>
 
