@@ -315,17 +315,17 @@
         const phoneInput = window.intlTelInput(phoneInputField, {
             initialCountry: "auto",
             geoIpLookup: function (callback) {
-                fetch('https://ipinfo.io/103.38.69.122?token=6f83d84b1c3575') 
+                fetch('https://ipinfo.io/103.38.69.122?token=6f83d84b1c3575')
                     .then(response => response.json())
                     .then(data => callback(data.country))
-                    .catch(() => callback("US")); 
+                    .catch(() => callback("US"));
             },
             utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
         });
 
         phoneInputField.addEventListener("blur", () => {
-            const phoneNumber = phoneInput.getNumber(); 
-            phoneInputField.value = phoneNumber; 
+            const phoneNumber = phoneInput.getNumber();
+            phoneInputField.value = phoneNumber;
         });
 
         document.getElementById("enquiryForm").addEventListener("submit", (e) => {
@@ -366,7 +366,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const currentDate = new Date();
-            const formattedDateTime = currentDate.toISOString().slice(0, 16); 
+            const formattedDateTime = currentDate.toISOString().slice(0, 16);
             document.getElementById("c_date").value = formattedDateTime;
         });
 
