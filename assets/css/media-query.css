@@ -1,0 +1,73 @@
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .landing-page .home .txt-sub-title {
+        font-weight: normal;
+        font-size: 22px;
+    }
+    .landing-page .home .txt-title {
+        font-size: 45px;
+    }
+    .landing-page .home .home-content {
+        width: 100% !important;
+    }
+    .head .custom-toggler {
+        color: white; 
+        background-color: transparent; 
+        border: none; 
+    }
+    
+    .landing-page .custom-toggler:focus {
+        outline: none; 
+        box-shadow: none; 
+    }
+    
+    .navbar .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    
+    .landing-page .custom-collapse {
+        background-color: #0075eb; 
+        color: var(--bg-color1);
+        position: absolute;
+        padding: 10px 0px;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        z-index: 1030; 
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .landing-page .navbar-collapse.show {
+        display: block !important; 
+    }
+    #btn_hide {
+        display: none !important;
+    }
+    .approach-icons {
+        height: auto !important;
+        width: 100px;
+    }
+    #preloader {
+        background-size: 22%;
+    }
+ }
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+ }
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+ }
+
+/* Large devices (larger desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+ }
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
